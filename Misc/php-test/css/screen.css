@@ -1,0 +1,5 @@
+* { margin: 0; padding: 0; }
+
+.viewport { position: relative; width: 500px; height: 200px; border: 1px solid #000; margin: 40px auto 20px auto; }
+
+.controls { position: relative; width: 200px; height: 200px; margin: 0 auto; }

@@ -1,0 +1,331 @@
+html, body { min-height: 100%; height: 100%; font-size: 100%; font-family: arial, helvetica, sans-serif; }
+input#file, input#memberfile { display: none; }
+
+input, select, textarea { border-radius: 0; border: 1px solid #ccc; }
+
+section.app, section.app section#main, section.app section#main section.stage { position: relative; height: 100%; -webkit-overflow-scrolling: touch; }
+
+figure { width: 100%; margin: 0; padding: 0; }
+figure img { width: 100%; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+ul.list { list-style: disc; margin: 20px; }
+
+a { color: #000; text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; }
+
+h1, h2, h3 { margin: 1.2em 0 0.9em 0; }
+h1 { font-size: 1.2em; }
+h2 { font-size: 1em; }
+
+h1.green { text-transform: uppercase; color: #92c845; font-size: 1.1em; }
+
+/* - checklist lead - */
+
+#main #checklist { position: fixed; width: 100%; height: 100%; z-index: 14; background-color: #fff; display: none; }
+#main #checklist ul { margin: 40px 0 0 0; }
+#main #checklist .list a.button { display: block; width: 100%; margin: 40px 0 0 0; }
+#main #checklist .list { position: relative; padding: 20px; overflow: auto; height: calc(100% - 140px); }
+#main #checklist figure.teamleader-pic { width: 130px; }
+#main #checklist figure.teamleader-pic img { float: left; margin: 0 15px 0 0; border: 2px solid #92c845; border-radius: 4px; }
+
+/* - sync - */
+
+section.sync-message { position: fixed; display: none; width: 100%; height: 100%; background-color: #f2f2f2; z-index: 20; opacity: 0.9; }
+section.sync-message figure { position: relative; width: 20%; left: 40%; top: 20%; }
+section.sync-message span { position: absolute; display: block; bottom: 56%; width: 100%; text-align: center; text-transform: uppercase; font-weight: bolder; }
+
+/* - roofplans - */
+
+#main ul#roofplans li section.overlay { position: relative; width: 100%; height: 100%; }
+#main ul#roofplans li section.overlay a.panel-overlay { position: absolute; background-color: #e8f1ff; opacity: 0.5; }
+#main ul#roofplans li section.overlay a.optimizer-overlay { position: absolute; background-color: #eea94e; opacity: 0.5; z-index: 12; }
+#main ul#roofplans li section.overlay a:focus, #main ul#roofplans li section.overlay a:hover { background-color: #fffde8; opacity: 0.7; }
+#main ul#roofplans li img { width: auto !important; }
+
+/* - preloader - */
+
+.stage figure.stage-loader { position: relative; width: 70px; height: 70px; margin: 150px auto 0 auto; }
+
+#main a.button, .app .button { position: relative; display: inline-block; width: 315px; line-height: 43px; color: #fff; font-weight: bold; text-align: center; background-color: #92c845; border-radius: 4px; text-decoration: none; text-transform: uppercase; margin: 50px 20px 20px 0; }
+#main a.inline-button { position: relative; display: inline-block; border-radius: 4px; margin: 10px 0 0 0; font-size: 0.8em; text-transform: lowercase; padding: 0 15px; background-color: #03aead; color: #fff; line-height: 24px; text-decoration: none; text-align: center; }
+#main a.button.signature { background-color: #c84646; }
+#main a.button.icon { border-radius: 50%; width: 43px; background-color: #ebb747; }
+#main a.button.alert { background-color: #b20612; }
+#main a.button.scan { background-color: #20b4a6; }
+#main a.button.scan[single] { background-color: #7a8988; }
+
+/* - header - */
+
+#main > header nav.mini { display: none; position: absolute; width: 100%; height: auto; }
+#main > header nav.mini > a { position: absolute; left: 20px; top: 20px; display: block; width: 37px; height: 19px; border-top: 6px solid #92c845; border-bottom: 6px solid #92c845; }
+#main > header nav.mini > a span { position: absolute; width: 100%; height: 6px; background-color: #92c845; top: 7px; }
+#main > header nav.mini ul { position: relative; display: none; background-color: #fff; width: 100%; height: 100%; margin-top: 76px; border-bottom: 2px solid #ccc; }
+#main > header nav.mini ul a { line-height: 60px; font-weight: bold; font-size: 0.9em; text-indent: 20px; }
+
+#main > header { position: fixed; display: none; height: 76px; width: 100%; z-index: 15; background-color: #fff; border-bottom: 2px solid #c4c0ba; }
+#main > header nav { position: relative; }
+#main > header nav ul { position: relative; margin: 0 0 0 48px; }
+#main > header nav li { position: relative; float: left; margin: 0 20px 0 0; }
+#main > header nav li a { display: block; line-height: 76px; font-size: 1.2em; color: #92c845; text-transform: uppercase; text-decoration: none; }
+#main > header nav li a:hover, #main > header nav li a:focus { text-decoration: underline; }
+
+#main > header nav.maxi a.back { position: relative; display: none; border-radius: 4px; background-color: #92c845; width: 100px; text-indent: 16px; float: left; line-height: 43px; color: #fff; font-weight: bold; font-size: 1.2em; text-transform: uppercase; text-decoration: none; top: 16px; margin: 0 48px 0 62px; }
+#main > header nav.maxi a.back span { position: absolute; display: block; width: 0; height: 0; border-top: 22px solid transparent; border-bottom: 22px solid transparent; border-right: 22px solid #92c845; border-radius: 4px; top: -1px; left: -20px; }
+
+#main > header nav li.map-link { display: none; }
+
+#main > header figure.logo { position: absolute; width: 200px; right: 48px; top: 0; }
+#main header section.icons { position: relative; top: 18px; }
+
+/* - footer - */
+
+#main > footer { position: fixed; display: none; height: 76px; z-index: 15; border-top: 2px solid #f2f2f2; width: 100%; bottom: 0; }
+#main > footer > section { height: 76px; background-color: #fff; padding: 0 20px; opacity: 0.8; width: 100%; }
+#main > footer a.messages { position: relative; top: 17px; display: block; width: 40%; width: calc(100% - 40px); font-size: 0.9em; background-color: red; border-radius: 4px; color: #fff; line-height: 40px; text-decoration: none; text-align: center; text-transform: uppercase; }
+#main > footer ul.messages { position: fixed; display: none; bottom: 77px; width: calc(100% - 40px); background-color: #fff; border-top: 2px solid #c4c0ba; height: 10%; padding: 20px; }
+#main > footer ul.messages a.seen-message { position: absolute; top: 20px; right: 20px; width: 38px; line-height: 38px; text-decoration: none; border-radius: 50%; font-size: 0.8em; text-transform: uppercase; background-color: #fff; border: 2px solid #c4c0ba; text-align: center; color: #c4c0ba; }
+#main > footer ul.messages a.seen-message:hover, #main > footer ul.messages a.seen-message:focus { background-color: #87c860; color: #fff; border-color: #fff; }
+#main > footer ul.messages span.messagecount { display: inline-block; position: absolute; top: 71px; line-height: 38px; width: 38px; border-radius: 50%; background-color: #20b4a6; color: #fff; font-weight: bold; font-size: 0.8em; right: 20px; border: 2px solid #13776e; text-align: center; }
+#main > footer ul.messages li { display: none; height: 100%; }
+#main > footer ul.messages li:first-child { display: block; }
+#main > footer ul.messages .content { position: relative; width: 89%; height: 100%; overflow-x: hidden; overflow-y: auto; }
+
+/* update */
+
+#main > header a[action=update-app] { position: relative; -webkit-animation: update 1.0s ease-in infinite; background-color: #87c860; display: none; line-height: 38px; width: 91px; margin-left: 12px; border-radius: 4px; color: #fff; text-decoration: none; text-transform: uppercase; text-align: center; font-size: 0.7em; }
+
+@-webkit-keyframes update {
+	to { background-color: red; }
+}
+
+/* - teammembers - */
+
+#main section.section#teammembers { position: fixed; width: 100%; display: none; z-index: 14; background-color: #fff; height: calc(100% - 78px); margin-top: 78px; }
+#main section.section#teammembers .members { position: relative; height: calc(100% - 42px); padding: 20px; overflow: auto; margin: 0 auto; }
+#main section.section#teammembers ul { position: relative; margin: 40px auto 0 auto; width: calc(100% - 120px); }
+#main ul.teammembers li { display: inline-block; width: 168px; margin: 0 30px 30px 0; border-radius: 10px; background-color: #e0efbf; border: 1px solid #92c845;  }
+#main ul.teammembers li.selected { background-color: #d9dee2; border: 1px solid #abc6e1; }
+#main ul.teammembers a { position: relative; display: inline-block; width: 100%; line-height: 56px; text-align: center; text-decoration: none; }
+#main ul.teammembers li figure { position: relative; top: 15px; width: 82%; margin: 0 auto; min-height: 70px; }
+#main ul.teammembers li figure h1 { color: #000; }
+#main section#teammembers h1.green { width: calc(100% - 40px); text-align: center; }
+#main section#teammembers a.button { width: 90%; margin: 65px auto 0 auto; display: block; }
+
+/* - reset tests - */
+
+#main header a[action=reset-testcases] { position: relative; float: left; width: 130px; display: none; line-height: 38px; top: 0; border-radius: 4px; background-color: red; color: #fff; text-transform: uppercase; font-size: 10px; text-align: center; text-decoration: none; }
+
+/* - scanner - */
+
+section#barcode-scanner { position: fixed; display: none; width: 420px; height: auto; left: calc(50% - 210px); top: calc(40% - 170px); background-color: #000; border-radius: 4px; padding-bottom: 50px; z-index: 18; }
+section#barcode-scanner section.shutter canvas { position: relative; margin: 50px 0 0 50px; background-color: #3a3a3a; }
+section#barcode-scanner section.shutter span { position: absolute; width: 50px; height: 50px; border: 4px solid #e40000; }
+
+section#barcode-scanner section.shutter span.topleft { top: 70px; left: 70px; border-right: none; border-bottom: none; }
+section#barcode-scanner section.shutter span.topright { top: 70px; right: 70px; border-left: none; border-bottom: none; }
+section#barcode-scanner section.shutter span.bottomleft { bottom: 70px; left: 70px; border-right: none; border-top: none; }
+section#barcode-scanner section.shutter span.bottomright { bottom: 70px; right: 70px; border-left: none; border-top: none; }
+
+section#barcode-scanner section.shutter a[action=close-shutter] { position: absolute; top: 12px; right: 20px; color: #fff; text-decoration: none; font-size: 1.3em; }
+
+/* - fullscreen - */ 
+
+section.app section.fullscreen { position: fixed; display: none; width: 100%; height: 100%; z-index: 16; background-color: #fff; overflow: auto; }
+section.app section.fullscreen figure { height: 100%; }
+section.app section.fullscreen a[action=exit-fullscreen] { position: fixed; right: 30px; top: 30px; width: 50px; height: 50px; z-index: 14; }
+
+/* - sections - */
+
+section#omschrijving { background-color: #f9ffec; }
+
+section.app section.part.client { display: none; }
+section.app header.client { display: none; }
+
+section.app section#finalize-aftermath { position: relative; display: none; width: 400px; margin: 20% auto 0 auto; }
+section.app section#finalize-aftermath h1 { font-size: 1.3em; text-align: center; }
+section.app section#finalize-aftermath a.button { margin: 50px auto 0 auto; display: block; }
+
+section.app section#login { position: relative; width: 400px; margin: 20% auto 0 auto; }
+section.app section#login input[type=text], section.app section#login input[type=password] { padding: 3%; border: 1px solid #ccc; border-radius: 1px; width: 400px; margin: 0 0 10px 0; }
+section.app section#login .button { margin-top: 20px; width: 106%; }
+
+section.login { display: none; }
+#main section.section { position: relative; width: 100%; float: left; }
+
+#main section.section#project { display: block; margin-right: -100%; margin-top: 78px; overflow-x: hidden; overflow-y: auto; height: calc(100% - 78px); }
+#main section.section#planned { display: block; margin-left: 0; overflow-x: hidden; overflow-y: auto; height: calc(100% - 78px); margin-top: 78px; }
+#main section.section#planned section.no-projects { position: relative; width: 100%; text-align: center; top: 10%; font-weight: bold; }
+#main section.section#map { position: fixed; visibility: hidden; z-index: 14; }
+
+#main section.section#material-checklist { position: fixed; display: none; z-index: 14; background-color: #fff; height: calc(100% - 78px); margin-top: 78px; }
+
+
+/* - checklist - */
+
+#main #material-checklist .list { position: relative; height: calc(100% - 42px); padding: 20px; overflow: auto; margin: 0 auto; }
+#main #material-checklist .list ul li { position: relative; line-height: 39px; }
+#main #material-checklist a.button { width: 100%; margin: 65px 0 0 0; }
+
+/* - form - */
+
+#main ul.form li { position: relative; line-height: 41px; margin: 30px 0; overflow: hidden; } 
+#main ul.form li > label { position: relative; display: none; margin: 0 20px 0 0; vertical-align: top; width: 200px; text-align: right; }
+#main ul.f-orm li span { position: relative; display: inline-block; width: 420px; }
+#main ul.form li > label span { display: inline; }
+#main ul.form li span input, #main ul.form li span select, #main ul.form li span textarea { width: 97%; padding: 1%; }
+#main ul.form li span input[type=number] { border-radius: 10px; }
+#main ul.form li span textarea { padding: 0 1%; }
+#main ul.form li span input { height: 18px; }
+#main ul.form li span input[type=checkbox] { width: 13px; }
+
+#main ul.form#panel-serial-inputs li span, #main ul.form#inverter-serial-inputs li span { position: relative; width: 90%; display: block; float: left; }
+
+/* - dropbox - */
+
+#main section#pics figure.dropbox-loader { position: relative; display: block; width: 70px; height: 70px; margin: 30px auto; } 
+#main section#pics figure.dropbox-loader span.percentage { position: relative; display: none; width: 100%; text-align: center; top: 65%; font-weight: bold; }
+
+#main section#pics section.no-dropbox-pics { position: relative; width: 100%; text-align: center; margin: 30px 0; font-weight: bold; }
+
+#main ul#dropbox-files { position: relative; width: auto; overflow-x: auto; white-space: nowrap; }
+#main ul#dropbox-files li { display: inline-block; width: 130px; padding: 30px; margin: 0 20px 0 0; border-radius: 10px; background-color: #e0efbf; border: 1px solid #92c845; }
+#main ul#dropbox-files li a.remove { position: absolute; margin-top: 0; margin-left: 140px; text-decoration: none; }
+
+#main section.dropbox-pics ul { position: absolute; display: none; width: 315px; margin-top: -201px; background-color: #c6d6b0; border-radius: 4px; padding: 14px 0 25px 0; }
+#main section.dropbox-pics ul a { position: relative; margin: 0 auto; border-bottom: 1px solid #d6e6bf; display: inline-block; width: 260px; left: 27.5px; line-height: 46px; color: #fff; text-transform: uppercase; font-weight: bolder; text-align: center; text-decoration: none; }
+#main section.dropbox-pics ul a:hover, #main section.dropbox-pics ul a:focus { background-color: #cddcb9; }
+#main section.dropbox-pics ul li:last-child a { border: none; }
+
+/* - icons - */
+
+#main ul#panel-serial-inputs a.remove, #main ul#inverter-serial-inputs a.remove { position: relative; display: block; width: 25px; top: 13px; float: right; right: 20px; } 
+#main ul#panel-serial-inputs li a.remove, #main ul#inverter-serial-inputs li a.remove { display: none; }
+#main ul#panel-serial-inputs li:last-child a.remove, #main ul#inverter-serial-inputs li:last-child a.remove { display: block; }
+#main ul#panel-serial-inputs li:nth-child(1) a.remove, #main ul#inverter-serial-inputs li:nth-child(1) a.remove { display: none; }
+#main ul#panel-serial-inputs a.scan-optimizer { position: absolute; display: inline-block; width: 26px; height: 26px; right: 8px; top: 4px; }
+#main ul#panel-serial-inputs a.scan-optimizer figure { position: absolute; width: 70%; top: 0; }
+
+/* - barcode scanner - */
+
+#interactive.viewport { position: absolute; display: none; border: 1px solid #ccc; background-color: #000; width: 98%; height: 98%; left: 1%; top: 1%; z-index: 18; }
+#interactive.viewport video { width: 100%; height: 100%; }
+
+/* - slider - */
+
+#main section#project nav.slider .slides-wrapper { position: relative; width: auto; height: 230px; overflow-y: hidden; overflow-x: auto; border-bottom: 1px solid #92c845; background-color: #fff; } 
+#main section#project nav.slider ul.slides { position: relative; height: 100%; width: auto; white-space: nowrap; } 
+#main section#project nav.slider ul.slides li { position: relative; display: inline-block; height: 100%; vertical-align: top; } 
+#main section#project nav.slider ul.slides li figure { min-width: 400px; position: relative; }
+
+#main section#project nav.s-lider section.bowls { position: absolute; height: 21px; width: auto; margin-top: 193px; z-index: 13; left: calc(50% - 26px); }
+#main section#project nav.s-lider section.bowls a { display: inline-block; width: 21px; height: 21px; background-color: #fff; border-radius: 50%; opacity: 0.6; border: 1px solid #aaa; margin: 0 7px 0 0; }
+#main section#project nav.s-lider section.bowls a.active { background-color: #94c34c; }
+
+#main section#project nav.slider ol.dots { position: absolute; height: 21px; width: auto; top: 190px; z-index: 13; left: calc(50% - 26px); margin: 0; padding: 0; }
+#main section#project nav.slider ol.dots li { display: inline-block; text-indent: 100%; overflow: hidden; width: 21px; height: 21px; background-color: #fff; border-radius: 50%; opacity: 0.6; border: 1px solid #aaa; margin: 0 7px 0 0; }
+#main section#project nav.slider ol.dots li.active { background-color: #94c34c; }
+
+#main section#project nav.slider section.object-address { position: absolute; color: #fff; top: 30px; left: 48px; text-shadow: 1px 1px 2px #000; z-index: 12; } 
+#main section#project nav.slider section.object-address a { color: #fff; }
+
+#main section#planned header { position: relative; display: block; line-height: 66px; width: 100%; background-color: #e0efbf; color: #000; font-weight: bold; font-size: 1.2em; text-transform: uppercase; text-indent: 48px; }
+#main section#planned header.welcome { background-color: #fff; border-bottom: 1px solid #e0efbf; border-top: 1px solid #e0efbf; text-transform: none; }
+
+#main section#planned > ul li > a { display: block; line-height: 66px; width: 100%; text-decoration: none; text-indent: 48px; color: #000; border-bottom: 1px solid #e0efbf; }
+#main section#planned > ul li > a.active { background-color: #f2eccc; }
+#main section#planned > ul li > a:hover, #main section#planned ul li > a:focus { background-color: #f8f8f8; }
+
+#main section#planned ul li span.arrow, #main section#project header.part .arrow { display: inline-block; position: absolute; margin-top: 25px; right: 48px; width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #678735; }
+span.arrow.out { border-top: 16px solid #678735 !important; border-right: 10px solid transparent !important; border-left: 10px solid transparent !important; }
+
+#main section#planned ul li span.finalized { display: inline-block; position: absolute; margin-top: 13px; right: 88px; width: 35px; }
+
+/* - workbuttons - */
+
+#main section#project section.workbuttons { position: absolute; right: 89px; top: 193px; z-index: 1; }
+#main section#project section.workbuttons li { float: left; }
+#main section#project section.workbuttons a { display: block; background-color: #f2f2f2; text-align: center; text-decoration: none; color: #000; text-transform: uppercase; font-size: 0.8em; width: 70px; line-height: 70px; height: 70px; border-radius: 50%; border: 4px solid #ccc; margin: 0 7px 0 0; }
+#main section#project section.workbuttons a:focus, #main section#project section.workbuttons a:hover { background-color: #dbdbdb; }
+#main section#project section.workbuttons a[work-action=start-work].working { -webkit-animation: working 0.8s ease-out infinite; }
+
+@-webkit-keyframes working {
+	from { border-color: #678735; }
+	to { border-color: #ccc; }
+}
+
+/* - boxes - */
+
+#main ul.boxes { position: relative; width: 1180px; }
+#main ul.boxes > li { position: relative; display: inline-block; width: 460px; margin: 0 33px 52px 0; vertical-align: top; }
+#main ul.boxes > li ul li:before { content: "\002022"; color: #92c845; padding: 0 12px 0 0; font-size: 1.2em; }
+
+/* - project parts - */
+
+#main section#project header.part a { position: relative; display: block; background: linear-gradient(#fff, #ddd); color: #000; text-decoration: none; width: 100%; line-height: 66px; text-indent: 48px; border-bottom: 2px solid #ccc; border-top: 1px solid #aaa; font-weight: bold; }
+#main section.part { position: relative; padding: 25px 48px; border-top: 2px solid #c4c0ba; background-color: #fff; }
+
+.button.facebook { width: 100% !important; background-color: #4c87d7 !important; }
+figure#facebook-pic { position: relative; margin: 40px auto; display: block; width: 80%; padding: 30px; border-radius: 10px; background-color: #99bcec; border: 1px solid #3765a3; }
+section.part#facebook p { text-align: center; font-size: 1.1em; }
+section.part#facebook figure.loader { position: relative; width: 10%; margin: 0 auto; display: block; }
+
+/* - section specific - */
+
+#main section#client-omschrijving p { width: 720px; margin: 0 0 20px 0; }
+
+#main section#project section#akkoord { display: none; }
+#main section#project section#client-signature .pad-wrapper { border: 1px solid #ccc; height: 300px; }
+
+#main section#map, #map-canvas { width: 100%; height: 100%; float: none; }
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (max-width: 480px) {
+	#main ul.boxes { width: 92%; }
+	#main ul.boxes > li { margin: 0 33px 14px 0; width: 100%; font-size: 0.8em; }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 768px) {
+	#main section#client-omschrijving p { width: 92%; }
+
+	#main ul.boxes > li { width: 100%; }
+
+	#main ul.form li > label { display: none; }
+	#main ul.f-orm li span { display: block; margin: 0 auto; width: 90%; }
+	#main ul.form li span select, #main ul.form li span textarea { padding: 26px; width: 70%; }
+	#main ul.form li span input[type=checkbox] { width: 13px !important; padding: 0; }
+	#main a.button, .app .button { width: 37%; margin: 10px 20px 10px 0; font-size: 0.8em; }
+	#main a.button[action=navigate-maps] { margin-top: 57px; }
+
+	#main section.dropbox-pics ul { margin-top: -235px; width: 269px; }
+	#main section.dropbox-pics ul a { width: 80%; left: 10%; }
+}
+
+@media screen and (max-width: 1024px) {
+	#main header a[action=reset-testcases] { width: 38px; border-radius: 50%; }
+	#main header section.icons { position: absolute; right: 27px; }
+	#main ul#panel-serial-inputs a.scan-optimizer { top: 20px; right: 6%; }
+	#main span.extra { display: none; }
+	#main section#planned header, #main section#planned ul li a { text-indent: 20px; }
+	#main section#planned ul li span.finalized { right: 50px; }
+	#main section#planned ul li span.arrow, #main section#project header.part .arrow { right: 37px; }
+	#main > header figure.logo { left: calc(50% - 75px); width: 150px; top: 5px; }
+	#main > header nav li { float: none; }
+	#main > header nav ul { margin: 0; }
+	#main section#project header.part a { text-indent: 20px; }
+	#main section.part { padding: 20px; }
+	
+	#main section#project section#akkoord .pad-wrapper { margin-bottom: 20px; }
+	section.app section#login { width: 88%; }
+	section.app section#login input[type=text], section.app section#login input[type=password] { width: 94%; }
+	section.app section#login .button { width: 101%; }
+	section.app section#finalize-aftermath { width: 80%; }
+
+	#main > header nav.mini { display: block; }
+	#main > header nav.maxi { display: none; }
+}
+
+@media screen and (max-width: 1200px) {}
