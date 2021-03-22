@@ -1,0 +1,30 @@
+/*
+The assignment was to make the blue box appear centered in the red box, see below for the original code.
+
+.red-box {
+  width: 640px;
+  height: 732px;
+  background: red;
+}
+
+.blue-box {
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+*/
+
+.red-box {
+  display: flex;
+  justify-content: center; 
+  width: 640px;
+  height: 732px;
+  background: red;
+}
+
+.blue-box {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
